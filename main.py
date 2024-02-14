@@ -21,7 +21,7 @@ while True:
         break
     if events == 'Calcular':
         try:
-            imc = float(valores['peso']) / (float(valores['altura']) * float(valores['altura']))
+            imc = float(valores['peso']) / (float(valores['altura']) ** 2)
             if imc < 18.5:
                 pesonivel='abaixo do peso'
             elif imc >= 18.5 and imc < 25:
